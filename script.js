@@ -19,8 +19,8 @@ function changeText() {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     let documentHeight = document.documentElement.scrollHeight;
     let windowHeight = window.innerHeight;
-    let halfWindowWidth = window.innerWidth / 3;
-    let scrollEndValue = 800;  // Adjust this value to control when the button disappears
+    let halfWindowWidth = window.innerWidth / 2;
+    let scrollEndValue = 3000;  // Adjust this value to control when the button disappears
   
     if (currentScroll + windowHeight < documentHeight - scrollEndValue) {
       document.querySelector(".scroll-down").style.display = "none";
