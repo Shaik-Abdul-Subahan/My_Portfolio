@@ -22,7 +22,7 @@ function changeText() {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     
     // If scrolled down more than 2500px, hide the button
-    if (currentScroll > 2000) {
+    if (currentScroll > 800) {
       document.querySelector(".scroll-down").style.display = "none";
     } else {
       // If you're scrolling up or you're at the top, show the button again
