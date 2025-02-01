@@ -686,6 +686,8 @@ footer p {
     border-radius: 30px;
     object-fit: cover;
     margin-right: 0;
+    margin-top: 50px;
+    padding: 3px;
   }
   
   .experience {
