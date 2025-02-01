@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />  
+    <link rel="stylesheet" href="styles.css" />
+    <title>Personal Portfolio Page  </title>
+  </head>
+  <body>
+
+    <!-- Header Section -->
+    <nav>
+      <img class="nav_img" src="./assets/Logo of AS.jpg" alt="AS logo">
+      <div class="nav__logo"><a href="#"><span>A</span><i>bdul</i><span> S</span><i>ubahan.</i></a></div>
+    </nav>
+    <header>
+      <div class="section__container header__container">
+        <p><span>Hello!</span> I'm</p> 
+        <h1> Shaik Abdul<br>Subahan</h1>
+        <h2 class="section__title">Web <span>Designer.</span></h2>
+        <p>
+          A Network Engineer turned Web Developer, eager to apply my skills in exciting web development opportunities.
+        </p>
+        <div class="action__btns">
+          <button class="btn">Say Hello!</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+          <img src="assets/Subahan img.jpg" alt="about" />
+        </div>
+        <div class="about__content">
+          <h2 class="section__title">About <span>Me</span></h2>
+          <p class="section__subtitle">Growing into the world of Web Development!</p>
+          <p class="about__details">
+            As a Network Engineer with 1.5 years, I gained expertise in network management and security. Now, I’m shifting to web development, building websites and applications, and eagerly looking forward to applying my skills in this exciting field.
+          </p>
+          <button class="btn"><a href="about.html">Know More</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="project">
+      <div class="section__container project__container">
+        <p class="section__subtitle">My</p>
+        <h2 class="section__title"><span>Latest</span> Projects</h2>
+        <div class="project__grid">
+          <div class="project__card">
+            <a href="index.html"><img src="assets/Project Portfolio.png" alt="project"></a>
+            <!-- <p><strong>My Personal Portfolio Project</strong></p> -->
+          </div>
+          <div class="project__card">
+            <img src="assets/project-2.png" alt="project" />
+          </div>
+          <div class="project__card">
+            <img src="assets/project-3.png" alt="project" />
+          </div>
+          <div class="project__card">
+            <img src="assets/project-4.png" alt="project" />
+          </div>
+          <div class="project__card">
+            <img src="assets/project-5.png" alt="project" />
+          </div>
+          <div class="project__card">
+            <img src="assets/project-6.png" alt="project" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__content">
+          <h2 class="section__title">Contact <span>Me!</span></h2>
+          <p class="section__subtitle">Let’s connect – eager to begin my career.</p>
+          <div class="footer__details">
+            <p>
+              I am seeking front-end design roles and would love to contribute my skills to a company that values growth and creativity. 
+              <br><br>Please contact me through the form, and I’ll get back to you shortly.
+            </p>
+          </div>
+          <div class="social__icons">
+            <a href="#" class="icon"><i class="ri-facebook-fill"></i></a>
+            <a href="#" class="icon"><i class="ri-mail-line"></i></a>
+            <a href="#" class="icon"><i class="ri-twitter-fill"></i></a>
+            <a href="#" class="icon"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+        <form class="footer__form">
+          <input type="text" placeholder="Your Name" required/>
+          <input type="email" placeholder="Your Email Address" required/>
+          <input type="tel" placeholder="Your Mobile Number" pattern="^\+?[1-9]\d{1,14}$"/>
+          <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

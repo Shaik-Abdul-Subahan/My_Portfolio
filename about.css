@@ -1,0 +1,754 @@
+/* General Body Settings */
+body {
+  background-color: rgb(255, 0, 0);
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ff4e05;
+  --secondary-color-dark: #bf3900;
+  --secondary-color-blue: rgb(101, 232, 255);
+  --text-dark: #13171b;
+  --text-light: #dbdbdb;
+  --white: #ffffff;
+  --max-width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.about__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem 1rem;
+  background-color: #000000;
+  border-radius: 50px;
+}
+
+.about__title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about__title span {
+  color: var(--secondary-color);
+}
+
+.about__subtitle {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/* Education Section */
+.education {
+  background-color: rgb(18, 17, 17);
+  padding: 50px 0;
+  border-radius: 50px;
+  margin-top: 1px;
+}
+
+.education__container {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.education__title span {
+  color: var(--secondary-color);
+}
+
+.education__title {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.education__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.education__flex > div {
+  background-color: #312f2f;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 30%;
+  min-width: 280px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.education__flex > div h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.education__flex > div p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.education__flex > div strong {
+  font-weight: bold;
+}
+
+.education__flex span {
+  color: rgb(0, 255, 242);
+}
+
+/* Certification Section */
+.certification {
+  background-color: rgb(18, 17, 17);
+  padding: 50px 0;
+  border-radius: 50px;
+  margin-top: 1px;
+}
+
+.certification__container {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.certification__title span {
+  color: var(--secondary-color);
+}
+
+.certification__title {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.certification__flex {
+  display: flex;
+  margin: 50px auto;
+}
+
+.CCNA__code {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  border: none;
+  border: 1px solid var(--secondary-color);
+  height: 100%;
+  width: 250px;
+  padding: 15px 15px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.ccna {
+  display: flex;
+  margin: auto;
+  width: 40%;
+  font-size: 19px;
+}
+
+.ccna__img {
+  width: 530px;
+  border-radius: 30px;
+  object-fit: cover;
+  margin-right: 150px;
+}
+
+/* Experience Section */
+.experience {
+  background-color: rgb(18, 17, 17);
+  padding: 50px 0;
+  border-radius: 50px;
+  margin-top: 1px;
+}
+
+.experience__container {
+  text-align: center;
+  padding: 0 50px;
+  margin-top: 30px;
+}
+
+.experience__company {
+  margin-top: 70px;
+}
+
+.experience__title span {
+  color: var(--secondary-color);
+}
+
+.experience__title {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.experience__companyflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience__companyname {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  border: none;
+  border: 1px solid var(--secondary-color);
+  height: 100%;
+  width: 620px;
+  padding: 15px 15px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.experience__companydate {
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  border: 1px solid var(--secondary-color);
+  height: 100%;
+  width: 320px;
+  padding: 15px 15px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.company__about {
+  margin: 110px 50px;
+  width: 410px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.imgflex {
+  display: flex;
+  gap: 50%;
+}
+
+.imglogo {
+  margin-top: 50px;
+  width: 180px;
+}
+
+.company__about span {
+  color: var(--secondary-color);
+  padding: 1px;
+  font-weight: bolder;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.company__flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.companyaboutflex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.titleflex {
+  margin-right: 19%;
+}
+
+.title-container {
+  width: 73%;
+  text-align: center;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  background-color: var(--secondary-color-dark);
+  border-radius: 20px;
+  padding: 20px 10px;
+  font-size: larger;
+}
+
+.routers1 {
+  display: flex;
+  margin: 10px;
+  gap: 20px;
+}
+
+.routers2 {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+}
+
+.niradrouter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  border-radius: 8px;
+  border: 3px solid #524f4f;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #fc8038fc;
+}
+
+.niradrouter img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.niradrouter h2 {
+  width: 270px;
+  margin-top: 2px;
+  background-color: var(--primary-color);
+  font-size: 1.25em;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 4px;
+}
+
+/* Professional Experience */
+.Professional {
+  background-color: rgb(18, 17, 17);
+  padding: 50px 0;
+  border-radius: 50px;
+  margin-top: 1px;
+}
+
+.Professional__container {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.Professional__title span {
+  color: var(--secondary-color);
+}
+
+.Professional__title {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.Professional__flex {
+  display: flex;
+  margin: 50px;
+  font-size: 17px;
+  width: 97%;
+}
+
+.NTE {
+  width: 100%;
+  margin-right: 90px;
+}
+
+.NTE strong {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.NTE ul strong {
+  color: var(--secondary-color-blue);
+  font-size: 17px;
+}
+
+.Professional__role {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  border: none;
+  border: 1px solid var(--secondary-color);
+  height: 100%;
+  width: 400px;
+  padding: 15px 15px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.Professional__role span {
+  color: var(--secondary-color);
+}
+
+.myrole {
+  color: var(--secondary-color);
+  border: 1px solid rgb(147, 144, 144);
+  padding: 9px 18px;
+  border-radius: 30px;
+  font-size: larger;
+}
+
+.Professional__clients {
+  display: flex;
+  border-radius: 50px;
+  outline: 1px solid rgb(32, 32, 31);
+  padding: 2px;
+}
+
+.clients__img {
+  height: 90px;
+  display: flexbox;
+  margin-left: 30px;
+  padding: 20px;
+}
+
+/* Skills Section */
+.skills__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.skills__title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.skills__title span {
+  color: var(--secondary-color);
+}
+
+.skills,
+footer {
+  background-color: rgb(18, 17, 17);
+  border-radius: 88px;
+  margin-top: 1px;
+}
+
+.skills__known {
+  margin-left: 50px;
+  display: flex;
+}
+
+.skills-category {
+  margin: 20px;
+  margin-left: 30px;
+  font-size: 17px;
+  margin-right: 70px;
+}
+
+.skills-category h3 {
+  outline: 1px solid var(--secondary-color);
+  width: 280px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.skills-category li {
+  font-size: 19px;
+}
+
+.skills-category strong {
+  color: var(--secondary-color-blue);
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+  margin-top: 2px;
+}
+
+footer p {
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Fixed Button Styling */
+#mainPageButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #050505;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.931);
+}
+
+#mainPageButton:hover {
+  background-color: #ff5e00;
+}
+
+/* General styles for bigger screens */
+@media (min-width:640px) {
+  /* All your original styles go here */
+}
+
+
+
+
+
+
+
+
+
+/* For Mobile Screen */
+
+
+
+
+
+
+/* Responsive Styles for Screen Width Below 640px */
+@media (max-width: 639px) {
+
+  /* General Body Settings */
+  body {
+    font-size: 14px;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  /* Adjusted Section Containers */
+  .about__container {
+    width: 95%;
+    padding: 1rem;
+    background-color: #000;
+    border-radius: 50px;
+    margin: 0 10px;
+    overflow: hidden; /* Prevent overflow */
+  }
+
+  .about__title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .about__subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .education__title,
+  .certification__title,
+  .experience__title,
+  .Professional__title,
+  .skills__title {
+    font-size: 24px;
+  }
+
+  .education__flex,
+  .certification__flex,
+  .experience__companyflex,
+  .Professional__flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .education__flex > div {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #312f2f;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    word-wrap: break-word; /* Ensures text breaks properly */
+    overflow-wrap: break-word; /* Ensures long text doesn't overflow */
+  }
+
+  .education__flex > div h3 {
+    font-size: 16px;
+  }
+
+  .education__flex > div p {
+    font-size: 14px;
+  }
+
+  .education__flex > div strong {
+    font-size: 14px;
+  }
+
+  .ccna__img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .experience__companyname,
+  .experience__companydate {
+    width: 100%;
+    font-size: 18px;
+    margin: 10px 0;
+    word-wrap: break-word; /* Ensure the text breaks properly */
+    overflow-wrap: break-word; /* Prevent text overflow */
+    background-color: #312f2f;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+
+  .company__about {
+    width: 100%;
+    margin: 20px auto;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #312f2f;
+    color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    word-wrap: break-word; /* Prevent text overflow */
+    overflow-wrap: break-word; /* Break words when needed */
+  }
+
+  .imgflex {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .imglogo {
+    width: 100px;
+    margin-top: 10px;
+  }
+
+  .routers1, .routers2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .niradrouter {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    word-wrap: break-word;
+    background-color: #fc8038fc;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .niradrouter img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Professional Role Section - Fixing text breaking issue */
+  .Professional__role {
+    width: 80%;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #312f2f;
+    color: white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    word-wrap: break-word; /* Break words in case of long text */
+    overflow-wrap: break-word; /* Prevents text from overflowing */
+    text-align: center;  /* Align text properly */
+
+  }
+
+  .NTE{
+    margin-left: 18%;
+    font-size: 15px;
+  }
+
+  .NTE strong{
+    font-size: 16px;
+  }   
+
+  .Professional__clients {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clients__img {
+    width: 40%;
+    margin: 10px;
+  }
+
+  /* Skills Section Adjustments */
+  .skills__container {
+    padding: 1rem;
+    overflow: hidden; /* Prevent horizontal overflow */
+  }
+
+  .skills__known {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .skills-category {
+    width: 100%;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: transparent;  /* Removed extra black background */
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .skills-category h3 {
+    font-size: 16px;
+    color: var(--white);
+  }
+
+  .skills-category li {
+    font-size: 14px;
+    color: var(--text-light);
+    display: flex;
+  }
+
+  .skills-category strong {
+    color: var(--secondary-color-blue);
+  }
+
+  /* Footer styling adjustments */
+  footer p {
+    font-size: 13px;
+  }
+
+  /* Fixed Button Styling */
+  #mainPageButton {
+    font-size: 10px;
+    padding: 8px 16px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  #mainPageButton:hover {
+    background-color: #ff5e00; 
+  }
+}
+
+
