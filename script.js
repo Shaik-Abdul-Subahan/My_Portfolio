@@ -9,7 +9,10 @@ function changeText() {
 
 
 
-  let scrollTimeout;
+// Scrolling Button
+
+
+  let lastScrollTop = 0;
 
   window.onload = function() {
     document.querySelector(".scroll-down").style.display = "block";
@@ -17,28 +20,18 @@ function changeText() {
   
   window.onscroll = function() {
     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    let documentHeight = document.documentElement.scrollHeight;
-    let windowHeight = window.innerHeight;
-    let halfWindowWidth = window.innerWidth / 2;
-    let scrollEndValue = 6000;  // Adjust this value to control when the button disappears
-  
-    if (currentScroll + windowHeight < documentHeight - scrollEndValue) {
+    
+    // If scrolled down more than 2500px, hide the button
+    if (currentScroll > 2700) {
       document.querySelector(".scroll-down").style.display = "none";
-      document.querySelector(".scroll-down").style.right = halfWindowWidth + "px";
     } else {
-      document.querySelector(".scroll-down").style.display = "none";
-    //   document.querySelector(".scroll-down").style.right = "20px";
-    }
-  
-    clearTimeout(scrollTimeout);
-  
-    scrollTimeout = setTimeout(function() {
-      let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-      let documentHeight = document.documentElement.scrollHeight;
-      let windowHeight = window.innerHeight;
-  
-      if (currentScroll + windowHeight < documentHeight) {
+      // If you're scrolling up or you're at the top, show the button again
+      if (currentScroll < lastScrollTop) {
         document.querySelector(".scroll-down").style.display = "block";
       }
-    }, 200);
+    }
+  
+    // Update last scroll position
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll position
   };
+  
