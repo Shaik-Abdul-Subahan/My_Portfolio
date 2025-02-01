@@ -340,6 +340,11 @@ footer {
   width: max-content;
 }
 
+#msg{
+  color: rgb(6, 243, 6);
+}
+
+
 /* Media queries */
 
 @media (min-width: 640px) {
@@ -614,6 +619,10 @@ footer {
   background-color: var(--secondary-color);
   color: white;
   cursor: pointer;
+}
+
+#msg{
+  color: rgb(6, 243, 6);
 }
 
 /* --- Mobile Responsiveness --- */
