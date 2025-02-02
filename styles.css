@@ -65,6 +65,32 @@ img {
   background-color: var(--secondary-color-dark);
 }
 
+ /* Button know more */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  animation: pulse 1.5s infinite;
+}
+
 a {
   text-decoration: none;
   color: var(--white);
@@ -620,6 +646,32 @@ footer {
   color: white;
   cursor: pointer;
 }
+
+/* Button know more */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  animation: pulse 1.5s infinite;
+} 
 
 #msg{
   color: rgb(6, 243, 6);
